@@ -17,6 +17,7 @@ document
   .addEventListener("click", function () {
     result, error, message, stepsText = null;
     console.log("Button clicked"); // To check if the button click event is detected
+    // scroll to results 
 
     // Retrieve user inputs
     const method = document.getElementById("method").value;
@@ -119,6 +120,7 @@ if (showSteps.checked && stepsText?.trim()) {
     // Display the HTML table in the stepsWindow
     stepsWindow.style.display = "block";
     stepsWindow.innerHTML = tableHtml;
+    document.getElementById("resultLabel").scrollIntoView({ behavior: "smooth" });
   } else {
     // Handle the case where there are no data rows
     stepsWindow.style.display = "none";
