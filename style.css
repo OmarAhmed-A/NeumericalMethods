@@ -67,7 +67,7 @@ button {
 @media (max-width: 768px) {
     .container {
         height: auto;
-        max-width: 100%;
+        max-width: 95%;
         margin: 5px auto;
     }
 }
