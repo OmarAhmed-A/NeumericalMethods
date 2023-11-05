@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dark>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark">
+    <title>Numerical Methods Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.1/math.js"></script>
+    <script src="Methods/bisection.js"></script>
+    <script src="Methods/falsePosition.js"></script>
+    <script src="Methods/newtonRaphson.js"></script>
+    <script src="Methods/secant.js"></script>
+    <script src="Methods/simpleFixedPointIteration.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Numerical Methods Calculator</h1>
+        <h2>By: <a href="https://omarcodes.me" target="_blank">Omar Ahmed Elsayed 20107196</a></h2> 
+        <div class="content">
+            <div class="method-selector">
+                <label for="method">Select Method:</label>
+                <select id="method">
+                    <option value="bisection">Bisection</option>
+                    <option value="falsePosition">False Position</option>
+                    <option value="newtonRaphson">Newton-Raphson</option>
+                    <option value="secant">Secant</option>
+                    <option value="simpleFixedPointIteration">Fixed Point</option>
+                </select>
+            </div>
+            <div class="input-fields">
+                <label for="expression">Enter f(x):</label>
+                <input type="text" id="expression" value="2x^3-2x-5">
+                <label for="a">Lower Bound (a):</label>
+                <input type="number" id="a" value="-5">
+                <label for="b">Upper Bound (b):</label>
+                <input type="number" id="b" value="7">
+                <label for="tolerance">Tolerance:</label>
+                <input type="number" id="tolerance" value="0.001">
+                <label for="maxIterations">Max Iterations:</label>
+                <input type="number" id="maxIterations" value="100">
+            </div>
+            <button id="calculateButton" type="button">Calculate</button>
+            <button id="resetButton" type="button">Reset</button>
+            <div class="results">
+                <div id="resultLabel"></div>
+                <div id="errorLabel"></div>
+                <div id="infoLabel"></div>
+            </div>
+            <div class="options">
+                <label for="showSteps">Show Steps of Iteration:</label>
+                <input type="checkbox" id="showSteps" checked>
+            </div>
+            <div id="stepsWindow"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
