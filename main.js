@@ -118,7 +118,8 @@ if (showSteps.checked && stepsText?.trim()) {
     tableHtml += "</table>";
 
     // Display the HTML table in the stepsWindow
-    stepsWindow.style.display = "block";
+    stepsWindow.style.cssText = "background-color: #222; color: #fff; width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #666; border-radius: 5px; font-size: 16px; height: 300px; overflow: auto;";
+
     stepsWindow.innerHTML = tableHtml;
     document.getElementById("resultLabel").scrollIntoView({ behavior: "smooth" });
   } else {
