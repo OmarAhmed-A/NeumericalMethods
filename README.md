@@ -29,13 +29,14 @@ The project is implemented in JavaScript and provides a user-friendly interface 
 
 ## Getting Started
 
-Find the Calculator At [this link](https://calc.omarcodes.me)
+Find the Calculator At [this link](https://calc.omarx.uk)
 
 Use the calculator to input your function expression, choose a method, and set method-specific parameters.
 
 Click the "Calculate" button to find the root of the function.
 
 ## Method-specific Details
+
 - Bisection: This method requires specifying a lower bound (a) and an upper bound (b) for the interval. It performs iterations until the root is found or a maximum number of iterations is reached.
 
 - False Position: Similar to bisection, this method also requires specifying initial bounds. It uses linear interpolation to approximate the root.
@@ -47,11 +48,13 @@ Click the "Calculate" button to find the root of the function.
 - Simple Fixed-Point Iteration: Requires an initial approximation and uses a simple iterative approach to find the root.
 
 ## Browser Compatibility
+
 The Numerical Methods Calculator is compatible with modern web browsers. Ensure that you're using an up-to-date browser for the best experience.
 
 ## License
+
 This project is licensed under the MIT License.
 
-
 ## Contact
-For any questions or feedback, please contact [Me](https://omarcodes.me).
+
+For any questions or feedback, please contact [Me](https://omarx.uk).
